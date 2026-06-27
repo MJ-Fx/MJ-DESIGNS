@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Services offered by MJDESIGN - Web Development, Graphics Design, and Forex Trading services." />
+    <title>My Services | MJDESIGN</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- ==================== LOADING SCREEN ==================== -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Loading<span class="loader-dots">...</span></div>
+        </div>
+    </div>
+
+    <!-- ==================== MOUSE GLOW ==================== -->
+    <div id="mouse-glow" class="mouse-glow"></div>
+    <div id="mouse-trail" class="mouse-trail"></div>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav id="navbar" class="navbar glass">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span class="logo-text">MJ<span class="logo-highlight">DESIGN</span></span>
+            </a>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ==================== BRAND SLOGAN SCROLLER ==================== -->
+    <section class="slogan-scroller">
+        <div class="slogan-track">
+            <span class="slogan-item">✦ Crafting Digital Excellence</span>
+            <span class="slogan-item">✦ Innovative Web Solutions</span>
+            <span class="slogan-item">✦ Creative Graphic Design</span>
+            <span class="slogan-item">✦ Strategic Forex Trading</span>
+            <span class="slogan-item">✦ Building Tomorrow's Websites</span>
+            <span class="slogan-item">✦ Design. Develop. Deliver.</span>
+            <span class="slogan-item">✦ Transforming Ideas into Reality</span>
+            <span class="slogan-item">✦ Code. Create. Innovate.</span>
+            <!-- Duplicate for seamless loop -->
+            <span class="slogan-item">✦ Crafting Digital Excellence</span>
+            <span class="slogan-item">✦ Innovative Web Solutions</span>
+            <span class="slogan-item">✦ Creative Graphic Design</span>
+            <span class="slogan-item">✦ Strategic Forex Trading</span>
+            <span class="slogan-item">✦ Building Tomorrow's Websites</span>
+            <span class="slogan-item">✦ Design. Develop. Deliver.</span>
+            <span class="slogan-item">✦ Transforming Ideas into Reality</span>
+            <span class="slogan-item">✦ Code. Create. Innovate.</span>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES HERO ==================== -->
+    <section class="page-hero services-page-hero">
+        <div class="page-hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="container page-hero-container">
+            <div class="page-hero-content">
+                <span class="section-tag">What I Do</span>
+                <h1 class="page-hero-title">My <span class="gradient-text">Services</span></h1>
+                <p class="page-hero-description">
+                    Comprehensive solutions tailored to bring your vision to life
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES OVERVIEW ==================== -->
+    <section class="section services-overview">
+        <div class="container">
+            <div class="services-overview-grid">
+                <!-- Web Development -->
+                <div class="service-detailed glass" data-service="web">
+                    <div class="service-detailed-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <span class="service-detailed-tag">Web Development</span>
+                    <h2 class="service-detailed-title">Web Development</h2>
+                    <p class="service-detailed-description">
+                        Building responsive, high-performance websites and web applications that deliver exceptional user experiences and drive business growth.
+                    </p>
+                    <div class="service-detailed-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Responsive Websites</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Web Applications</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Landing Pages</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Business Websites</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Portfolio Websites</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>E-commerce Solutions</span>
+                        </div>
+                    </div>
+                    <div class="service-detailed-cta">
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                        <a href="portfolio.html" class="btn btn-secondary">View Projects</a>
+                    </div>
+                </div>
+
+                <!-- Graphics Design -->
+                <div class="service-detailed glass" data-service="design">
+                    <div class="service-detailed-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <span class="service-detailed-tag">Graphics Design</span>
+                    <h2 class="service-detailed-title">Graphics Design</h2>
+                    <p class="service-detailed-description">
+                        Creating visually compelling designs that communicate your brand's story and leave a lasting impression on your audience.
+                    </p>
+                    <div class="service-detailed-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Brand Identity</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Logo Design</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Business Cards</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Posters & Flyers</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Social Media Designs</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>UI/UX Design</span>
+                        </div>
+                    </div>
+                    <div class="service-detailed-cta">
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                        <a href="portfolio.html" class="btn btn-secondary">View Projects</a>
+                    </div>
+                </div>
+
+                <!-- Forex Trading -->
+                <div class="service-detailed glass" data-service="forex">
+                    <div class="service-detailed-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <span class="service-detailed-tag">Forex Trading</span>
+                    <h2 class="service-detailed-title">Forex Trading</h2>
+                    <p class="service-detailed-description">
+                        Expert analysis and strategic guidance to navigate the financial markets and achieve consistent trading success.
+                    </p>
+                    <div class="service-detailed-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Market Analysis</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Trading Strategies</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Risk Management</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Mentorship</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Trading Journals</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Technical Analysis</span>
+                        </div>
+                    </div>
+                    <div class="service-detailed-cta">
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                        <a href="portfolio.html" class="btn btn-secondary">View Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PRICING PLANS ==================== -->
+    <section class="section pricing-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Pricing</span>
+                <h2 class="section-title">Choose Your <span class="gradient-text">Plan</span></h2>
+                <p class="section-subtitle">
+                    Flexible pricing options tailored to your project needs
+                </p>
+            </div>
+            <div class="pricing-grid">
+                <!-- Basic Plan -->
+                <div class="pricing-card glass">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Starter</h3>
+                        <div class="pricing-price">
+                            <span class="currency">KSH</span>
+                            <span class="amount">3,000</span>
+                            <span class="period">/ project</span>
+                        </div>
+                        <p class="pricing-description">Perfect for small projects and startups</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 1 Page Website</li>
+                        <li><i class="fas fa-check"></i> Responsive Design</li>
+                        <li><i class="fas fa-check"></i> Basic SEO Setup</li>
+                        <li><i class="fas fa-check"></i> 2 Revisions</li>
+                        <li><i class="fas fa-check"></i> 30 Days Support</li>
+                        <li><i class="fas fa-check"></i> Source Code Included</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary pricing-cta">Get Started</a>
+                </div>
+
+                <!-- Professional Plan -->
+                <div class="pricing-card glass featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Professional</h3>
+                        <div class="pricing-price">
+                            <span class="currency">KSH</span>
+                            <span class="amount">10,000</span>
+                            <span class="period">/ project</span>
+                        </div>
+                        <p class="pricing-description">Ideal for growing businesses</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 5 Page Website</li>
+                        <li><i class="fas fa-check"></i> Responsive Design</li>
+                        <li><i class="fas fa-check"></i> Advanced SEO Setup</li>
+                        <li><i class="fas fa-check"></i> 10 Revisions</li>
+                        <li><i class="fas fa-check"></i> 90 Days Support</li>
+                        <li><i class="fas fa-check"></i> Source Code Included</li>
+                        <li><i class="fas fa-check"></i> CMS Integration</li>
+                        <li><i class="fas fa-check"></i> Performance Optimization</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary pricing-cta">Get Started</a>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="pricing-card glass">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Enterprise</h3>
+                        <div class="pricing-price">
+                            <span class="currency">KSH</span>
+                            <span class="amount">+70,000</span>
+                            <span class="period">/ project</span>
+                        </div>
+                        <p class="pricing-description">For large-scale projects and agencies</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited Pages</li>
+                        <li><i class="fas fa-check"></i> Responsive Design</li>
+                        <li><i class="fas fa-check"></i> Complete SEO Package</li>
+                        <li><i class="fas fa-check"></i> Unlimited Revisions</li>
+                        <li><i class="fas fa-check"></i> 365 Days Support</li>
+                        <li><i class="fas fa-check"></i> Source Code Included</li>
+                        <li><i class="fas fa-check"></i> CMS Integration</li>
+                        <li><i class="fas fa-check"></i> Performance Optimization</li>
+                        <li><i class="fas fa-check"></i> Advanced Security</li>
+                        <li><i class="fas fa-check"></i> Priority Support</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary pricing-cta">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROCESS / WORKFLOW ==================== -->
+    <section class="section process-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">How It Works</span>
+                <h2 class="section-title">My <span class="gradient-text">Process</span></h2>
+                <p class="section-subtitle">
+                    A streamlined approach to delivering exceptional results
+                </p>
+            </div>
+            <div class="process-grid">
+                <div class="process-step glass">
+                    <div class="process-number">01</div>
+                    <div class="process-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="process-title">Consultation</h3>
+                    <p class="process-description">
+                        We start with a deep conversation to understand your goals, vision, and requirements.
+                    </p>
+                </div>
+                <div class="process-step glass">
+                    <div class="process-number">02</div>
+                    <div class="process-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3 class="process-title">Planning & Design</h3>
+                    <p class="process-description">
+                        I create a detailed plan and design mockups to visualize the final product.
+                    </p>
+                </div>
+                <div class="process-step glass">
+                    <div class="process-number">03</div>
+                    <div class="process-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="process-title">Development</h3>
+                    <p class="process-description">
+                        Bringing designs to life through clean, efficient, and maintainable code.
+                    </p>
+                </div>
+                <div class="process-step glass">
+                    <div class="process-number">04</div>
+                    <div class="process-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="process-title">Launch & Support</h3>
+                    <p class="process-description">
+                        Deploying your project and providing ongoing support to ensure success.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHY CHOOSE ME ==================== -->
+    <section class="section why-choose-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Why Choose Me</span>
+                <h2 class="section-title">What Sets Me <span class="gradient-text">Apart</span></h2>
+            </div>
+            <div class="why-choose-grid">
+                <div class="why-item glass">
+                    <div class="why-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h4 class="why-title">Fast Delivery</h4>
+                    <p class="why-description">Efficient workflow ensuring quick turnaround without compromising quality.</p>
+                </div>
+                <div class="why-item glass">
+                    <div class="why-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4 class="why-title">Clean Code</h4>
+                    <p class="why-description">Writing maintainable, well-documented code following industry best practices.</p>
+                </div>
+                <div class="why-item glass">
+                    <div class="why-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h4 class="why-title">Creative Design</h4>
+                    <p class="why-description">Unique, modern designs that capture your brand's essence and stand out.</p>
+                </div>
+                <div class="why-item glass">
+                    <div class="why-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h4 class="why-title">24/7 Support</h4>
+                    <p class="why-description">Dedicated support to address your concerns and ensure smooth operation.</p>
+                </div>
+                <div class="why-item glass">
+                    <div class="why-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h4 class="why-title">Responsive Design</h4>
+                    <p class="why-description">Ensuring your website looks and works perfectly on all devices and screen sizes.</p>
+                </div>
+                <div class="why-item glass">
+                    <div class="why-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4 class="why-title">Security Focus</h4>
+                    <p class="why-description">Implementing best security practices to protect your data and users.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Clients <span class="gradient-text">Say</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "MJ delivered an outstanding website for my business. His attention to detail and
+                        creative vision exceeded my expectations. Highly recommend!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Jane Doe</h4>
+                            <p class="author-title">CEO, TechStart</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Working with MJ was a game-changer for our brand. His design skills and
+                        professional approach made the entire process seamless and enjoyable."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MS</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Mike Smith</h4>
+                            <p class="author-title">Founder, CreativeLab</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "MJ's ability to blend technical expertise with creative design is impressive.
+                        He built a stunning portfolio website that truly represents my work."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AL</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Amy Lee</h4>
+                            <p class="author-title">Photographer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ SECTION ==================== -->
+    <section class="section faq-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item glass">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How long does it take to build a website?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The timeline depends on the complexity of the project. A simple landing page can take 1-2 weeks, while a full-featured website or web application may take 4-8 weeks. I'll provide a detailed timeline during our consultation.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Do you offer maintenance services?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! I offer ongoing maintenance packages to keep your website updated, secure, and performing optimally. This includes content updates, security patches, and performance monitoring.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What is your design process?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>My process includes consultation, research, wireframing, design mockups, development, testing, and launch. I keep you involved throughout the process to ensure the final product aligns with your vision.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Do you provide hosting services?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>While I don't provide hosting directly, I can recommend reliable hosting providers and assist with the setup process. I'll ensure your website is properly configured for optimal performance.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What happens if I'm not satisfied with the work?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Your satisfaction is my priority. I offer revisions based on our agreement and work closely with you until you're completely happy with the result. I'm committed to delivering excellence.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How do we get started?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Simply reach out through my contact page. We'll schedule a consultation to discuss your project requirements, timeline, and budget. From there, I'll prepare a detailed proposal and plan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT CTA ==================== -->
+    <section class="section contact-cta">
+        <div class="container">
+            <div class="cta-wrapper glass">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Start Your <span class="gradient-text">Project</span>?</h2>
+                    <p class="cta-description">
+                        Let's discuss your ideas and turn them into reality.
+                    </p>
+                    <a href="contact.html" class="btn btn-primary btn-large">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="cta-orb">
+                    <div class="cta-orb-inner"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">&lt;/&gt;</span>
+                        <span class="logo-text">MJ<span class="logo-highlight">DESIGNS</span></span>
+                    </a>
+                    <p class="footer-description">
+                        Creative web developer, graphics designer, and forex trader
+                        passionate about building modern digital experiences.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/MJ-Fx" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://pinterest.com/mjdesigns" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul>
+                        <li><a href="services.html#web">Web Development</a></li>
+                        <li><a href="services.html#design">Graphics Design</a></li>
+                        <li><a href="services.html#forex">Forex Trading</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p class="footer-newsletter-text">
+                        Subscribe for updates and insights.
+                    </p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required />
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; <span id="current-year">2026</span> MJ DESIGNS. All rights reserved.
+                </p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="scripts.js"></script>
+</body>
+</html>

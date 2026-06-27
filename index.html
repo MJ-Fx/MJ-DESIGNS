@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MJ DESIGNS - Web Developer, Graphics Designer & Forex Trader. Building futuristic digital experiences." />
+    <title>MJ DESIGNS | Web Developer & Designer</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- ==================== LOADING SCREEN ==================== -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Loading<span class="loader-dots">...</span></div>
+        </div>
+    </div>
+
+    <!-- ==================== MOUSE GLOW ==================== -->
+    <div id="mouse-glow" class="mouse-glow"></div>
+    <div id="mouse-trail" class="mouse-trail"></div>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav id="navbar" class="navbar glass">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span class="logo-text">MJ<span class="logo-highlight">DESIGNS</span></span>
+            </a>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ==================== BRAND SLOGAN SCROLLER ==================== -->
+    <section class="slogan-scroller">
+        <div class="slogan-track">
+            <span class="slogan-item">✦ Crafting Digital Excellence</span>
+            <span class="slogan-item">✦ Innovative Web Solutions</span>
+            <span class="slogan-item">✦ Creative Graphic Design</span>
+            <span class="slogan-item">✦ Strategic Forex Trading</span>
+            <span class="slogan-item">✦ Building Tomorrow's Websites</span>
+            <span class="slogan-item">✦ Design. Develop. Deliver.</span>
+            <span class="slogan-item">✦ Transforming Ideas into Reality</span>
+            <span class="slogan-item">✦ Code. Create. Innovate.</span>
+            <!-- Duplicate for seamless loop -->
+            <span class="slogan-item">✦ Crafting Digital Excellence</span>
+            <span class="slogan-item">✦ Innovative Web Solutions</span>
+            <span class="slogan-item">✦ Creative Graphic Design</span>
+            <span class="slogan-item">✦ Strategic Forex Trading</span>
+            <span class="slogan-item">✦ Building Tomorrow's Websites</span>
+            <span class="slogan-item">✦ Design. Develop. Deliver.</span>
+            <span class="slogan-item">✦ Transforming Ideas into Reality</span>
+            <span class="slogan-item">✦ Code. Create. Innovate.</span>
+        </div>
+    </section>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero" class="hero">
+        <!-- Animated Background -->
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <canvas id="particles-canvas" class="particles-canvas"></canvas>
+            <div class="grid-overlay"></div>
+        </div>
+
+        <!-- Floating Objects -->
+        <div class="floating-objects">
+            <div class="float-obj cube" data-speed="3" data-depth="0.2">
+                <div class="cube-face front"></div>
+                <div class="cube-face back"></div>
+                <div class="cube-face right"></div>
+                <div class="cube-face left"></div>
+                <div class="cube-face top"></div>
+                <div class="cube-face bottom"></div>
+            </div>
+            <div class="float-obj ring" data-speed="2" data-depth="0.4">
+                <div class="ring-inner"></div>
+            </div>
+            <div class="float-obj code-snippet" data-speed="4" data-depth="0.3">
+                <code>&lt;div&gt;Hello World!&lt;/div&gt;</code>
+            </div>
+            <div class="float-obj sphere" data-speed="5" data-depth="0.6">
+                <div class="sphere-inner"></div>
+            </div>
+            <div class="float-obj diamond" data-speed="3.5" data-depth="0.5">
+                <div class="diamond-shape"></div>
+            </div>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <!-- Social Icons -->
+                <div class="hero-social">
+                    <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+
+                <!-- Badge -->
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for Freelance
+                </div>
+
+                <!-- Headline -->
+                <h1 class="hero-title">
+                    Designing the <span class="gradient-text">Future</span>,<br />
+                    One Line of <span class="gradient-text">Code</span> at a Time.
+                </h1>
+
+                <!-- Typewriter -->
+                <div class="hero-typewriter">
+                    <span class="typewriter-prefix">I'm </span>
+                    <span id="typewriter-text" class="typewriter-text"></span>
+                    <span class="typewriter-cursor">|</span>
+                </div>
+
+                <!-- Description -->
+                <p class="hero-description">
+                    I'm Joseph Muigai, a passionate Web Developer, Graphics Designer, and Forex Trader
+                    dedicated to transforming ideas into visually stunning, interactive, and high-performing
+                    digital experiences.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="hero-cta">
+                    <a href="portfolio.html" class="btn btn-primary">
+                        <span>Explore My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="contact.html" class="btn btn-secondary">
+                        <span>Hire Me</span>
+                        <i class="fas fa-rocket"></i>
+                    </a>
+                </div>
+
+                <!-- Statistics -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="20">0</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="5">0</div>
+                        <div class="stat-label">Years Learning</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="100">0</div>
+                        <div class="stat-label">% Dedication</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== LIVE CHARACTER ==================== -->
+            <div class="hero-character">
+                <div class="character-container">
+                    <div class="character-glow"></div>
+                    <div class="character-wrapper">
+                        <!-- Character SVG/Canvas placeholder -->
+                        <canvas id="character-canvas" class="character-canvas"></canvas>
+                        <!-- Holographic UI Panels -->
+                        <div class="hologram-panel panel-1">
+                            <div class="hologram-header">
+                                <span class="hologram-dot"></span>
+                                <span class="hologram-dot"></span>
+                                <span class="hologram-dot"></span>
+                            </div>
+                            <div class="hologram-body">
+                                <div class="hologram-line"></div>
+                                <div class="hologram-line"></div>
+                                <div class="hologram-line short"></div>
+                            </div>
+                        </div>
+                        <div class="hologram-panel panel-2">
+                            <div class="hologram-chart">
+                                <div class="chart-bar"></div>
+                                <div class="chart-bar"></div>
+                                <div class="chart-bar"></div>
+                                <div class="chart-bar"></div>
+                                <div class="chart-bar"></div>
+                            </div>
+                        </div>
+                        <div class="hologram-panel panel-3">
+                            <div class="code-window">
+                                <div class="code-line"><span class="code-keyword">function</span> <span class="code-function">build</span>() {</div>
+                                <div class="code-line"><span class="code-indent">return</span> <span class="code-string">"awesome"</span>;</div>
+                                <div class="code-line">}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Character Label -->
+                    <div class="character-label">
+                        <span class="label-dot"></span>
+                        <span>Joseph Muigai <span class="label-sub">- Digital Craftsman</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll</span>
+            <div class="scroll-line">
+                <div class="scroll-progress"></div>
+            </div>
+        </div>
+    </section>
+<!-- ==================== ABOUT PREVIEW ==================== -->
+<section id="about-preview" class="section about-preview">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image">
+                <div class="about-image-wrapper">
+                    <!-- REPLACE THIS PATH WITH YOUR ACTUAL IMAGE PATH -->
+                    <img src="Jose1.jpeg" alt="Joseph Muigai - Web Developer & Designer" class="about-profile-image" />
+                    <div class="about-image-glow"></div>
+                </div>
+                <div class="about-floating-badge">
+                    <i class="fas fa-code"></i>
+                    <span>3+ Years Coding</span>
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="section-header">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">Building Digital <span class="gradient-text">Experiences</span></h2>
+                </div>
+                <p class="about-text">
+                    Joseph Muigai is a creative web developer, graphics designer, and forex trader with
+                    a passion for building modern digital experiences that combine aesthetics with
+                    functionality. His journey into technology began with a fascination for solving
+                    problems through code and design.
+                </p>
+                <p class="about-text">
+                    Beyond coding, Joseph has developed expertise in digital branding, graphic design,
+                    and financial market analysis through forex trading. This multidisciplinary
+                    background allows him to approach projects creatively while maintaining strong
+                    analytical thinking and attention to detail.
+                </p>
+                <div class="about-skills">
+                    <span class="skill-tag">Web Development</span>
+                    <span class="skill-tag">Graphics Design</span>
+                    <span class="skill-tag">Forex Trading</span>
+                    <span class="skill-tag">UI/UX Design</span>
+                    <span class="skill-tag">Branding</span>
+                    <span class="skill-tag">Analytics</span>
+                </div>
+                <a href="about.html" class="btn btn-primary">
+                    <span>Learn More About Me</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- ==================== SERVICES PREVIEW ==================== -->
+    <section id="services-preview" class="section services-preview">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">What I Do</span>
+                <h2 class="section-title">My <span class="gradient-text">Services</span></h2>
+                <p class="section-subtitle">
+                    Transforming ideas into impactful digital solutions
+                </p>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card glass">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">
+                        Responsive websites, web applications, landing pages, business websites, and portfolio sites.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Responsive Design</li>
+                        <li><i class="fas fa-check"></i> Web Applications</li>
+                        <li><i class="fas fa-check"></i> Landing Pages</li>
+                    </ul>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card glass">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="service-title">Graphics Design</h3>
+                    <p class="service-description">
+                        Brand identity, logos, business cards, posters, flyers, and social media designs.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Brand Identity</li>
+                        <li><i class="fas fa-check"></i> Logo Design</li>
+                        <li><i class="fas fa-check"></i> Social Media Graphics</li>
+                    </ul>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card glass">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-title">Forex Trading</h3>
+                    <p class="service-description">
+                        Market analysis, trading strategies, risk management, mentorship, and trading journals.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Market Analysis</li>
+                        <li><i class="fas fa-check"></i> Trading Strategies</li>
+                        <li><i class="fas fa-check"></i> Risk Management</li>
+                    </ul>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PORTFOLIO PREVIEW ==================== -->
+    <section id="portfolio-preview" class="section portfolio-preview">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">
+                    A selection of projects I've designed and developed
+                </p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item glass">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4 class="portfolio-title">E-Commerce Platform</h4>
+                        <p class="portfolio-category">Web Development</p>
+                        <a href="portfolio.html" class="portfolio-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item glass">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4 class="portfolio-title">Brand Identity Design</h4>
+                        <p class="portfolio-category">Graphics Design</p>
+                        <a href="portfolio.html" class="portfolio-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item glass">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4 class="portfolio-title">Trading Dashboard</h4>
+                        <p class="portfolio-category">Forex Trading</p>
+                        <a href="portfolio.html" class="portfolio-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ACHIEVEMENTS ==================== -->
+    <section id="achievements" class="section achievements">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Achievements</span>
+                <h2 class="section-title">My <span class="gradient-text">Milestones</span></h2>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-item glass">
+                    <div class="achievement-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="achievement-number" data-count="20">0</div>
+                    <div class="achievement-label">Projects Completed</div>
+                    <div class="achievement-plus">+</div>
+                </div>
+                <div class="achievement-item glass">
+                    <div class="achievement-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="achievement-number" data-count="15">0</div>
+                    <div class="achievement-label">Happy Clients</div>
+                    <div class="achievement-plus">+</div>
+                </div>
+                <div class="achievement-item glass">
+                    <div class="achievement-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="achievement-number" data-count="5">0</div>
+                    <div class="achievement-label">Years Learning</div>
+                    <div class="achievement-plus">+</div>
+                </div>
+                <div class="achievement-item glass">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="achievement-number" data-count="100">0</div>
+                    <div class="achievement-label">% Dedication</div>
+                    <div class="achievement-plus">%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TECHNOLOGIES ==================== -->
+    <section id="technologies" class="section technologies">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Tech Stack</span>
+                <h2 class="section-title">Technologies I <span class="gradient-text">Work With</span></h2>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-item"><i class="fab fa-html5"></i><span>HTML5</span></div>
+                <div class="tech-item"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+                <div class="tech-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                <div class="tech-item"><i class="fab fa-php"></i><span>PHP</span></div>
+                <div class="tech-item"><i class="fas fa-database"></i><span>MySQL</span></div>
+                <div class="tech-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                <div class="tech-item"><i class="fab fa-github"></i><span>GitHub</span></div>
+                <div class="tech-item"><i class="fab fa-figma"></i><span>Figma</span></div>
+                <div class="tech-item"><i class="fab fa-adobe"></i><span>Photoshop</span></div>
+                <div class="tech-item"><i class="fas fa-paint-brush"></i><span>Illustrator</span></div>
+                <div class="tech-item"><i class="fas fa-code"></i><span>VS Code</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section id="testimonials" class="section testimonials">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Clients <span class="gradient-text">Say</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Joseph delivered an outstanding website for my business. His attention to detail and
+                        creative vision exceeded my expectations. Highly recommend!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Derrick Mwangi</h4>
+                            <p class="author-title">CEO, Billionares Hub</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Working with Joseph was a game-changer for our brand. His design skills and
+                        professional approach made the entire process seamless and enjoyable."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MS</div>
+                        <div class="author-info">
+                            <h4 class="author-name">David Gachoka</h4>
+                            <p class="author-title">Founder, CreativeLab</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Joseph's ability to blend technical expertise with creative design is impressive.
+                        He built a stunning portfolio website that truly represents my work."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AL</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Leonard Kamau</h4>
+                            <p class="author-title">Electrician</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT CTA ==================== -->
+    <section id="contact-cta" class="section contact-cta">
+        <div class="container">
+            <div class="cta-wrapper glass">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Bring Your <span class="gradient-text">Idea</span> to Life?</h2>
+                    <p class="cta-description">
+                        Let's collaborate and create something amazing together.
+                    </p>
+                    <a href="contact.html" class="btn btn-primary btn-large">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="cta-orb">
+                    <div class="cta-orb-inner"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">&lt;/&gt;</span>
+                        <span class="logo-text">MJ<span class="logo-highlight">DESIGNS</span></span>
+                    </a>
+                    <p class="footer-description">
+                        Creative web developer, graphics designer, and forex trader
+                        passionate about building modern digital experiences.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Graphics Design</a></li>
+                        <li><a href="services.html">Forex Trading</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p class="footer-newsletter-text">
+                        Subscribe for updates and insights.
+                    </p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required />
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; <span id="current-year">2026</span> MJ DESIGNS. All rights reserved.
+                </p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="scripts.js"></script>
+</body>
+</html>
